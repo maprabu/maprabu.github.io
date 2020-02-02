@@ -19,18 +19,18 @@ baseurl:               ''
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Hydejack
+title:                 Dr. M. Prabu
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  "Best Jekyll Theme by a Mile".
+  Professor | Researcher.
   **Hydejack** is your presence on the web, featuring a blog, portfolio, and resume.
 
 # A shorter description for the sidebar.
 tagline:               >
-  "Best Jekyll Theme by a Mile".
-  Open `_config.yml` to edit this text.
+  "Professor | Researcher".
+  
 
 # A list of keywords for your blog
 keywords:              []
@@ -49,11 +49,11 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Hydejack
+  - title:             Profile
     url:               /hydejack/
-  - title:             Hyde
+  - title:             Research
     url:               /hyde/
-  - title:             Documentation
+  - title:             Academic
     url:               /docs/
   - title:             About
     url:               /about/
@@ -306,8 +306,8 @@ plugins:
 # social:
 #   name:                <firstname> <lastname>
 #   links:
-#     - https://twitter.com/<username>
-#     - https://github.com/<username>
+#     - https://twitter.com/maprabu7
+#     - https://github.com/maprabu
 
 
 # Other Plugins
