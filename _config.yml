@@ -24,12 +24,12 @@ title:                 Dr. M. Prabu
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Professor | Researcher.
+  Professor | Researcher
   **Hydejack** is your presence on the web, featuring a blog, portfolio, and resume.
 
 # A shorter description for the sidebar.
 tagline:               >
-  "Professor | Researcher".
+  Professor | Researcher
   
 
 # A list of keywords for your blog
