@@ -1,181 +1,339 @@
-# Software Developer Folio ⚡️ [![GitHub](https://img.shields.io/github/license/saadpasta/developer-portfolio?color=blue)](https://github.com/saadpasta/developer-portfolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/saadpasta/developer-portfolio)  [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/86c52691ca3c46e4bf887d704c196824)](https://www.codacy.com/manual/saadpasta/developerFolio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=saadpasta/developerFolio&amp;utm_campaign=Badge_Grade)
+# Dev Portfolio
 
-## A clean, beautiful and responsive portfolio template for Developers!
+This repo contains an easy-to-customize personal dev portfolio template that was created with Sass and JavaScript. It is lightweight and fully responsive, as well as comes with the Bootstrap grid system and loaded with Font Awesome. The site is static and comes production ready if you just want to add your information and go. Alternatively, you can edit styles, colours, and scripts fairly easily. The site was built as modular as possible to make it easy to shift around styles and content.
 
+To view a live demo, [click here](https://ryanfitzgerald.github.io/devportfolio/).
 
-<p align="center"> 
-  <kbd>
-<img src="src/assests/images/portfolio.gif"></img>
-  </kbd>
-</p>
+Looking for a blog template? Checkout [DevBlog](https://github.com/RyanFitzgerald/devblog).
 
+## Features
 
-Just change `src/porfolio.js` to get your personal portfolio . Feel free to use it as-is or customize it as much as you want. 
+* Gulp ready (compiles Sass and minifies JS)
+* Sass ready with lots of commenting
+* Fully responsive
+* Comes with Bootstrap grid system
+* Easy colour changes can be done through simple variable edits
 
-But if you want to **contribute** and make this much better for other developer have a look at [Issues](https://github.com/saadpasta/developerFolio/issues).
+## Contents
 
+- [Setup and Configuration](#setup-and-configuration)
+    - [Making Edits / Customizing the Template](#making-edits--customizing-the-template)
+    - [Using the Template As Is](#using-the-template-as-is)
+- [Customization and Editing](#customization-and-editing)
+    - [General](#general)
+    - [Images](#images)
+    - [Header Section](#header-section)
+    - [Lead Section](#lead-section)
+    - [About Section](#about-section)
+    - [Experience Section](#experience-section)
+    - [Education Section](#education-section)
+    - [Projects Section](#projects-section)
+    - [Skills Section](#skills-section)
+    - [Contact Section](#contact-section)
+    - [Footer Section](#footer-section)
+    - [Optional Sections](#optional-sections)
+- [Changelog](#changelog)
+- [License](#license)
 
-If you created something awesome and want to contribute then feel free to open Please don't hesitate to open an [pull request](https://github.com/saadpasta/developerFolio/pulls).
+## Setup and Configuration
 
+The setup required can be broken into two types:
+1. If you want to make edits or customize the template
+2. If you just want to add your information as use as is
 
-## Sections 
-✔️ Summary and About me\
-✔️ Skills \
-✔️ Open Source Projects Connected with Github\
-✔️ Big Projects\
-✔️ Achievements And Certifications 🏆\
-✔️ Blogs\
-✔️ Talks\
-✔️ Podcast\
-✔️ Contact me
+### Making Edits / Customizing the Template
 
-To view a live example, **[click here](https://saadpasta.github.io/)**
+To setup, simply fork the repo and run `npm install` in order to get all the Gulp dev dependencies. Next, run `Gulp watch` to compile the Sass and minify the JavaScript. Alternatively, if you don't have Gulp installed globally, you can run the npm script `npm run watch`. Any changes done to the JavaScript (js/scripts.js) or Sass (sass/styles.scss) will be autocompiled and ready to go.
 
+All scripts are within `js/scripts.js` and get minified to `js/scripts.min.js`. All styles are in `sass/styles.scss` and get compiled to `css/styles.css`. Both the minified scripts file and compiled CSS file are what is loaded on the page by default.
 
-## Getting Started 🚀
+At this point, the page is ready to go and you can begin to add your own information and make any needed changes. The sections below  contains a quick breakdown of each of the default sections and how they work.
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+### Using The Template As Is
 
-You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer
+If you wish to use the template as is (i.e. how it's seen in the demo), then all that's required is the `css`, `images`, `js`, `libs` folders and the `index.html` file. You would then add your content to `index.html` as needed and you're good to go!
 
-```
-node@v10.16.0 or higher
-npm@6.9.0 or higher
-git@2.17.1 or higher
-```
+## Customization and Editing
 
----
+### General
 
-## How To Use 🔧
+In general, most styles on the page are based off the definitions of variables in the variable section of the style sheet:
 
-From your command line, clone and run developerFolio:
+```SCSS
+// Define base and accent colors
+$base-color: #3498db;
+$base-color-hover: darken($base-color, 10%);
 
-```bash
-# Clone this repository
-$ git clone https://github.com/username/developerFolio.git
+// Define background colors
+$background: #fff;
+$background-alt: #f2f2f5;
 
-# Go into the repository
-$ cd developerFolio
+// Define border colors
+$border: #dcd9d9;
 
-# Install dependencies
-$ npm install
-
-```
-## Github Setup For Open Source Projects
-
-### Genrate a Github personal access token using these [Instructions](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) `Make sure you don't select any scope just generate a simple token`
-
-Copy the token and open Chrome Developer Console to convert your token to base64 so github do not revert your token when you push your token to git
-
-```bash
-# Open your Chrome Developer Console console paste the token inside btoa
-$ btoa("YOUR GITHUB TOKEN")
-```
-
-Copy your converted token and paste it in `/src/portfolio.js`
-
-```javascript
-  const openSource = {
-  /* Your Open Source Section to View Your Github Pinned Projects */
-  /* To know how to get github key look at readme.md */
-  
-  githubConvertedToken: "Your Github Converted Token",
-  githubUserName: "Your Github Username"
-};
+// Define text colors
+$heading: #374054;
+$text: #74808a;
 ```
 
+If you wish to change the general colour scheme of the page for example, simply change the value of `$base-color`.
 
-## Change and customize every section according to your need.
+There is also a number of default CSS classes that can be applied such as `.shadow`, `.shadow-large`, `.btn-rounded-white`, and various others. These can be found under the General Styles section in the style sheet.
 
-### To Change website content go to `/src/portfolio.js` and change content according to yours.
+### Images
 
-```javascript
-/* Change this file to get your Personal Porfolio */
+By default, the template comes with a number of images, some of which can be kept and others which act simply as placeholders and should be switched. The template contains the following:
 
-const gretting = {
-  /* Your Summary And Gretting Section */
-  title: "Hi all 👋 I'm Saad",
-  subTitle: "A passionate Full Stack Software Developer 🚀.
-  resumeLink: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing"
-};
+* Main background (images/lead-bg.jpg) - this is the main background image provided via [Unsplash](https://unsplash.com/). This can be kept or changed easily by replacing `images/lead-bg.jpg` with your new background (recommended size of at least 1920x1080).
+* Favicon (/favicon.ico) - this is the favicon used for the page. Similar to the main bg, this can kept or changed easily by replacing the `favicon.ico` with your new one.
+* Project image - these are the images associated with the projects under the project section. These are simply placeholders and should either be replaced or removed.
 
-const socialMediaLinks = {
-  /* Your Social Media Link */
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7"
-};
+### Header Section
 
+The header section can be found within the `<header>` tag and simply contains an unordered list of anchors to different sections of the page. If you add a new section and want to be able to quickly navigate to it from the top, simply add another list element with an anchor that has the href of the ID of the section. Conversely, if you remove a section, don't forget to remove the associated navigation element.
 
-const skillsSection = { .... }
+If you wish to add a header link to an external page, simply add the class `no-scroll` to the anchor. For example:
 
-const openSource = { .... } 
-
-const bigProjects = { .... }
-
-const achievementSection = { .... }
-
-const blogSection = { .... }
-
-const contactInfo = { .... }
-
+```HTML
+<li>
+    <a href="https://google.com" class="no-scroll">Google</a>
+</li>
 ```
 
+If you wish to have a sticky (fixed) header, you simply need to add a class of `sticky` to the main header. For example, that would be accomplished as follows:
 
-## Technologies used 🛠️
+```HTML
+<header class="sticky">
+    <!-- Header content -->
+</header>
+```
 
-- [React](https://reactjs.org/)
-- [graphql](https://graphql.org/) 
-- [apollo-boost](https://www.apollographql.com/docs/react/get-started/) 
+### Lead Section
 
-## illustrations
-- [UnDraw](https://undraw.co/illustrations)
+The Lead section is pretty straightforward, it contains an h1 for your name and an h2 for your title. It also contains a link that can be used to link to your resume should you wish to add it as well.
 
-## Deployment 📦 
-Once you have done with your setup. You need to put your website online!
-I highly recommend to use [Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) to achieve this on the EASIEST WAY
+If you want your resume to automatically download when the button is clicked instead of opening up in another tab (the default behaviour), add the following code (Thanks to jkfran for the suggestion) in the lead:
 
+```HTML
+<a href="path/to/resume.pdf" download="resume.pdf" class="btn-rounded-white">Download Resume</a>
+```
 
+The href attribute points to where your resume is stored and the download attribute is what triggers the download / provides the name the file will be downloaded as when the user clicks the button (In this case, it will download as resume.pdf).
 
-## License 📄
+### About Section
 
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details
+The about section contains a quick about blurb that can be edited by changing the text within the paragraph tags.
 
+### Experience Section
 
+The experience section creates a vertical timeline with all your relevant experience. The code for the timeline creation can be found within `js/scripts.js` and is an adaptaion of [RyanFitzgerald/vertical-timeline](https://github.com/RyanFitzgerald/vertical-timeline).
 
+The default format is as follows:
 
-## For the Future 
-If you can help us with these. Please don't hesitate to open an [pull request](https://github.com/saadpasta/developerFolio/pulls).
+```HTML
+<div id="experience-timeline">
+    <div data-date="September 2015 – September 2016">
+        <h3>Employer Name</h3>
+        <h4>Job Title</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex.
+        </p>
+    </div>
+</div>
+```
 
-- Connect with LinkedIn to get Summary, Skills, Education and Experience
+The data attribute `data-date` is what is used to add a date to the associated timeline point. All that is really required is a wrapping div (i.e. `#experience-timeline`) and nested divs to build the timeline. The h3, h4, and p tags are optional and the contents of the div can be styled however you wish.
 
-- Move to Gatsby
+To add additional section, simply add additional nested divs under the main wrapping div.
 
-- Add More Sections and Move to Multi Page
+### Education Section
 
-- Add Podcast Section and Video Section
+The Education is just a series of `.education-block` classes with some details associated with them. By default, it shows school name, date, degree, and some additional details. For example:
 
-## Contributors ✨
+```HTML
+<div class="education-block">
+    <h3>University of Ottawa</h3>
+    <span class="education-date">Sept 2016 - Sept 2017</span>
+    <h4>Bachelor of Science in Computer Science</h4>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex.
+    </p>
+</div>
+```
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+To add additional section, simply add additional `.education-block` elements.
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="http://saadpasta.github.io"><img src="https://avatars2.githubusercontent.com/u/23307811?v=4" width="100px;" alt=""/><br /><sub><b>Saad Pasta</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=saadpasta" title="Code">💻</a> <a href="https://github.com/saadpasta/developerFolio/commits?author=saadpasta" title="Documentation">📖</a> <a href="#design-saadpasta" title="Design">🎨</a> <a href="#maintenance-saadpasta" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="http://facebook.com/9inpachi"><img src="https://avatars2.githubusercontent.com/u/36920441?v=4" width="100px;" alt=""/><br /><sub><b>Fawad Ali</b></sub></a><br /><a href="#ideas-9inpachi" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/saadpasta/developerFolio/commits?author=9inpachi" title="Code">💻</a></td>
-    <td align="center"><a href="https://dasunnavoda.wordpress.com/"><img src="https://avatars0.githubusercontent.com/u/5556085?v=4" width="100px;" alt=""/><br /><sub><b>Dasun Navoda</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=IamDZN" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/kartik918"><img src="https://avatars1.githubusercontent.com/u/48270786?v=4" width="100px;" alt=""/><br /><sub><b>Kartik Choudhary</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=kartik918" title="Code">💻</a> <a href="#design-kartik918" title="Design">🎨</a> <a href="#ideas-kartik918" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://brian.teeman.net"><img src="https://avatars3.githubusercontent.com/u/1296369?v=4" width="100px;" alt=""/><br /><sub><b>Brian Teeman</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=brianteeman" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://rajkumaar.co.in"><img src="https://avatars1.githubusercontent.com/u/37476886?v=4" width="100px;" alt=""/><br /><sub><b>Rajkumar S</b></sub></a><br /><a href="https://github.com/saadpasta/developerFolio/commits?author=rajkumaar23" title="Code">💻</a></td>
-  </tr>
-</table>
+### Projects Section
 
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+The Project section contains a number of `.project` elements that represent each of your projects. By default, it contains a 300x300 image under `.project-image` and relevant project information under `.project-info`. An example is as follows:
 
+```HTML
+<div class="project">
+    <div class="project-image">
+        <img src="images/project.jpg" />
+    </div>
+    <!-- End .project-image -->
+
+    <div class="project-info">
+        <h3>Project Name Here</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex.
+        </p>
+        <a href="#">View Project</a>
+    </div>
+    <!-- End .project-info -->
+</div>
+```
+
+If you want to hide some projects by default, you can throw them in an additional row and add the markup for the "Show More" button. This would be done as follows:
+
+```HTML
+<!-- Projects Above -->
+
+<a id="view-more-projects" href="#">View More Projects</a>
+<div id="more-projects" class="row">
+    <div class="project shadow-large">
+        <div class="project-image">
+            <img src="images/project.jpg" />
+        </div>
+        <!-- End .project-image -->
+        <div class="project-info">
+            <h3>Project Name Here</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+            </p>
+            <a href="#">View Project</a>
+        </div>
+        <!-- End .project-info -->
+    </div>
+    <!-- End .project -->
+</div>
+```
+
+This will add a link that says "View More Projects" under the current projects and when clicked, all projects in the "More-projects" div will be shown. This is optional functionality and isn't provided by default. It is important that you keep the wrapping div ID intact ("#more-projects") as well as the anchor ID ("#view-more-projects"), however the contents of the div and the anchor text itself can be edited however you like.
+
+#### Projects without images
+
+If you do not wish to have a project image associated with a project, you can simply add `no-image` as an additional class to the project. It would look like the following:
+
+```HTML
+<div class="project no-image">
+    <div class="project-info">
+        <h3>Project Name Here</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex.
+        </p>
+        <a href="#">View Project</a>
+    </div>
+    <!-- End .project-info -->
+</div>
+```
+
+### Skills Section
+
+The Skills section is simply an unordered list that spits out a "Skill Cloud" with all the skills listed. To add / remove skills, simply edit or add list elements, like so:
+
+```HTML
+<ul>
+    <li>JavaScript</li>
+    <li>Python</li>
+    <li>Ruby</li>
+    <li>Go</li>
+    <li>Node.js</li>
+</ul>
+```
+
+### Contact Section
+
+Since the page is static, I opted to use the awesome Formspree to allow for a contact form without the need for anything else. To use it, you must have the page hosted on a server (loading a basic HTML page won't work) where a referrer header is generated. Also, simply add the email to the action. An example is as follows:
+
+```HTML
+<form method="POST" action="https://formspree.io/email@email.com">
+    <input type="hidden" name="_subject" value="Contact request from personal website" />
+    <input type="email" name="_replyto" placeholder="Your email" required>
+    <textarea name="message" placeholder="Your message" required></textarea>
+    <button type="submit">Send</button>
+</form>
+```
+For more information on configuration of the contact form or dealing with errors, check out [Formspree](https://formspree.io/).
+
+For a quick tutorial about formspree, check out this [tutsplus tutorial](https://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites--cms-23870) that covers different aspects and features of the form tool.
+
+### Footer Section
+
+The Footer contains an optional copyright where you can place your name as well as an unordered list of all of your social or coding related profiles. By default it contains Github, Stack Overflow, Facebook, Twitter, and Google Plus. You can add or remove them easily and simply use the Font Awesome icon associated with the social profile you wish to use. For a list of all icons, [click here](http://fontawesome.io/icons/).
+
+### Optional Sections
+
+The template comes with an optional section that can be added to the page markup to list things like Certifications, Hobbies, and more (Note: these are not included by default). The markup for the additional optional section is as follows:
+
+```HTML
+<div class="optional-section background-alt">
+    <h2 class="heading">Section Name</h2>
+
+    <div class="optional-section-block">
+        <h3>Some content title</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+        </p>
+        <ul>
+            <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+            <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+            <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+        </ul>
+    </div>
+    <!-- End .optional-section-block -->
+
+</div>
+<!-- End .optional-section -->
+```
+
+You can copy .optional-section-block for each new item you wish you have in the optional section. Also, the background-alt class may need to be removed depending on where the optional section is placed in your layout as this adds the grey background. If you play it at the bottom after "Skills", it can be used as is. Also, by default the border is applied at the top, but this can also be adjusted as needed.
+
+The optional section blocks have styling for h3 (the block title), h4, p, and ul tags by default.
+
+## Changelog
+
+### 1.2.1
+
+* Updated dependencies and gulpfile
+* Added `no-image` optional class for projects without images (see above for usage)
+
+### 1.2.0
+
+* Added support for optional "Show More Projects" that hides some projects by default if included
+* Added optional sections to display certifications, languages, etc.
+
+### 1.1.3
+
+* Added default favicon to be used or changed
+* Added `sticky` class to make header fixed
+* Updated docs to add image section
+
+### 1.1.2
+
+* Added `no-scroll` class option to header navigation anchor if you want to link to external site
+* Changed contact form input / textarea colours to be based off `$base-color`
+* Changed main background to 100vh so it doesn't overflow if viewport height < 700px
+
+### 1.1.1
+
+* Made input placeholder text more readable
+* Removed timeline line when no JS
+* Added some basic styling to timeline when no JS
+
+### 1.1.0
+
+* Fixed menu toggle on mobile devices
+* Fixed z-index / scrolling issue with mobile menu
+* Mobile menu now closes once a nav element is hit
+
+## License
+
+Completely free (MIT)! See [LICENSE.md](LICENSE.md) for more.
