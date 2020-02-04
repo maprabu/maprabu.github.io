@@ -58,16 +58,16 @@ webmaster_verifications:
 ####################################
 #
 author:  # change following line to your infomation.
-  name: Cristian Castellari  # Be used at blog posts' author.
-  first_name: Cristian  # Be used at index page about me section.
-  last_name: Castellari  # Be used at index page about me section.
+  name: Dr. M. Prabu  # Be used at blog posts' author.
+  first_name: Prabu  # Be used at index page about me section.
+  last_name: Madhavan  # Be used at index page about me section.
   avatar: /static/assets/img/landing/me.jpg  # upload your avatar at directory and edit it.
-  github_username: skyflash  # Leave blank if you don't have now
-  linkedin_id: cristiancastellari # Leave blank if you don't have now
-  facebook_username: cristian.castellari  # Leave blank if you don't have now
-  twitter: BloggerStanco
-  email: c.castellari@gmail.com  # Leave blank if you don't have now
-  cv: https://cristiancastellari.it/static/assets/cv/CV_Cristian_Castellari.pdf  # An online CV can be printed as PDF, leave blank if you don't have now
+  github_username: maprabu  # Leave blank if you don't have now
+  linkedin_id: prabumadhavan # Leave blank if you don't have now
+ # facebook_username: cristian.castellari  # Leave blank if you don't have now
+  #twitter: BloggerStanco
+  #email: c.castellari@gmail.com  # Leave blank if you don't have now
+  #cv: https://cristiancastellari.it/static/assets/cv/CV_Cristian_Castellari.pdf  # An online CV can be printed as PDF, leave blank if you don't have now
 
 
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
@@ -77,7 +77,7 @@ author:  # change following line to your infomation.
   skill_icon2:
     - name: fa-apple
     - name: fa-chrome
-  desc: Introduce myself will be here.  # Describe yourself.
+  desc: It's all about me.  # Describe yourself.
 
 # comment
 disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
