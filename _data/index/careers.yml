@@ -16,29 +16,32 @@
   present: true
 
 - name:
-    detail: Novomatic Italia Services s.r.l.
+    detail: Assistant Professor
     i18n: novomatic
   desc:
-    detail: Assistenza in ambito Office Automation a tutti gli utenti del Gruppo Novomatic sul territorio italiano. Gestione di server Linux e Windows che offrono diversi servizi quali Git, MDM, siti web corporate, antivirus eccetera
+    detail: School of Computer Science and Engineering
     i18n: novomatic_desc
   date:
-    detail: Gennaio 2015 - Dicembre 2016
+    detail: June 2017 - April 2019
     i18n: novomatic_date
   job:
-    detail: Referente Office Automation
+    detail: Vellore Institute of Technology, Vellore.
     i18n: novomatic_job
   icon: fa-plus-square
 
 - name:
-    detail: SO.GE.M.A. SpA
+    detail: Teaching Research Assistant
     i18n: sogema
   desc:
-    detail: Ho progettato e gestito l'intera infrastruttura del Gruppo, realizzando un progetto di consolidamento e centralizzazione che ha ridotto i costi e permesso a tutti gli utenti (oltre 100) di lavorare in un ambiente funzionale ed uniforme.
+    detail: School of Computer Science and Engineering
     i18n: sogema_desc
   date:
-    detail: Gennaio 2006 - Dicembre 2014
+    detail: January 2014 - May 2017
     i18n: sogema_date
   job:
-    detail: Responsabile IT
+    detail: Vellore Institute of Technology, Vellore.
     i18n: sogema_job
   icon: fa-plus-square
+  
+ 
+  
