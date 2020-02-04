@@ -57,3 +57,16 @@
     detail: Vellore Institute of Technology, Vellore.
     i18n: sogema_job
   icon: fa-plus-square
+- name:
+    detail: Junior Research Fellow
+    i18n: sogema
+  desc:
+    detail: 
+    i18n: sogema_desc
+  date:
+    detail: October 2010 - May 2012
+    i18n: sogema_date
+  job:
+    detail: Loyola College, Chennai.
+    i18n: sogema_job
+  icon: fa-plus-square
