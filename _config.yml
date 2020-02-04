@@ -5,7 +5,7 @@
 #
 title: Prabu Madhavan
 description: "Informatico, padre e marito. Nel tempo libero mi dedico alla famiglia, agli amici e ai videogiochi"
-keywords: cristian, castellari, blog, jekyll, gh-pages, kace, github, wordpress
+keywords: 
 baseurl:  '' # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
 url: https://maprabu.github.io/  # url should be 'http://<github_username>.github.io/homepage' as before
 img_path: /static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
@@ -81,7 +81,7 @@ author:  # change following line to your infomation.
 
 # comment
 disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
-  name: cristiancastellari-it
+  name: prabumadhavan
 
 # analytics
 ## google analytics
