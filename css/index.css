@@ -24,6 +24,18 @@ body {
   min-height: 100%;
 }
 
+a:link {
+  color: red;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:active {
+  color: green;
+}
+
 h1, h2 {
   font-weight: normal;
   font-size: 20px;
