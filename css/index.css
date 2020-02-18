@@ -71,8 +71,8 @@ header {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 10%;
-  width: 140px;
+  right: 60%;
+  width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
