@@ -72,7 +72,7 @@ header {
   top: 0;
   bottom: 0;
   right: 60%;
-  width: 100px;
+  width: 140px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,7 +121,7 @@ header {
 #content {
   position: absolute;
   left: 50%;
-  width: 50%;
+  width: 80%;
 }
 
 section {
