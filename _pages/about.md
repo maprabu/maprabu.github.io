@@ -21,13 +21,7 @@ Computing, Distributed Computing, Ontology,
 Remote Sensing and GIS.
 
 ---
-permalink: /
-title: "About me"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+about.html
 ---
 
 Prabu Madhavan is an Assistant Professor in
