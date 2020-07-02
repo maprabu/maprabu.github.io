@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Dr. M. Prabu"
   avatar           : "0 (2).jpeg"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  bio              : "Assistant Professor"
+  #location         : "Location"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=GEG55BMAAAAJ"
