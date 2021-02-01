@@ -22,7 +22,8 @@ tools:
   - item: Bash
   - item: Git & Github
   - item: ArcGIS
-  - item: MongoDB
+  - item: MATLAB
+  - item: SciLab
 
 researchinterest:
   - item: Digital Image Processing
