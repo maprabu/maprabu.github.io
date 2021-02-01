@@ -1,11 +1,13 @@
 languages:
-  - item: JavaScript (ES6)
-  - item: TypeScript
+  - item: JavaScript 
   - item: HTML
-  - item: CSS/Sass
+  - item: CSS
   - item: Python
+  - item: C/C++
   - item: SQL
   - item: R
+  - item: Shell
+  
 
 frameworks:
   - item: Ember & Glimmer
@@ -19,15 +21,12 @@ frameworks:
 tools:
   - item: Bash
   - item: Git & Github
-  - item: Gulp & Grunt
-  - item: Chrome DevTools
-  - item: Postman
+  - item: ArcGIS
   - item: MongoDB
 
-design:
-  - item: Sketch
-  - item: InDesign
-  - item: InVision
-  - item: Prototyping
-  - item: Wireframing
-  - item: User Testing
+researchinterest:
+  - item: Digital Image Processing
+  - item: Machine Learning
+  - item: Remote Sensing
+  - item: Distributed Computing
+
