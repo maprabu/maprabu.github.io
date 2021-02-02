@@ -1,0 +1,38 @@
+- name:  Grid Based Application Development for Satellite Image Processing
+  url: 
+  code: 
+  description: Developed Grid based environment to achieve a processing of large set of satellite images in a small time period and efficient manner. To search, discover and reveal the satellite image information using a novel approach for earth observation application under Grid environment.
+  used:
+    - thing: Python
+    - thing: Hadoop
+    - thing: MATLAB
+    - thing: DFS
+    - thing: Shell
+    - thing: HTML
+    - thing: CSS
+    - thing: JavaScript
+
+
+- name: Online Prediction Emergency Response Management for Vector Borne Diseases
+  url: 
+  code: 
+  description: This project is to predict the spreading diseases in rural areas and alert public health care centers for further actions to prevent people from diseases.
+  used:
+    - thing: HTML
+    - thing: CSS
+    - thing: JavaScript
+    - thing: ArcGIS
+    - thing: PostGIS
+    - thing: PostgreSQL
+
+
+- name: Optimal Lot Sizing Policies for Sequential Online Auctions
+  url: 
+  code: 
+  description: This project is to control and customize the online trading and online shopping system.
+  used:
+    - thing: HTML
+    - thing: CSS
+    - thing: JavaScript
+    - thing: MySQL
+    - thing: jQuery

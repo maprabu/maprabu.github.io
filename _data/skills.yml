@@ -1,0 +1,34 @@
+languages:
+  - item: JavaScript 
+  - item: HTML
+  - item: CSS
+  - item: Python
+  - item: C/C++
+  - item: SQL
+  - item: R
+  - item: Shell
+  
+
+frameworks:
+  - item: Ember & Glimmer
+  - item: React
+  - item: Jekyll
+  - item: Node
+  - item: D3
+  - item: Wordpress
+  - item: Timber
+
+tools:
+  - item: Bash
+  - item: Git & Github
+  - item: ArcGIS
+  - item: MATLAB
+  - item: SciLab
+  
+
+researchinterest:
+  - item: Digital Image Processing
+  - item: Machine Learning
+  - item: Remote Sensing
+  - item: Distributed Computing
+

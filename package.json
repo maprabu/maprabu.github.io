@@ -1,53 +1,28 @@
 {
-  "name": "developers-portfolio",
-  "description": "A personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects.",
-  "homepage": "http://hashirshoaeb.com",
-  "version": "2.0.0",
-  "private": true,
-  "author": {
-    "name": "Hashir Shoaib",
-    "email": "hashirshoaeb@gmail.com",
-    "url": "https://github.com/hashirshoaeb"
+  "name": "brittanychiang.com",
+  "version": "0.0.0",
+  "description": "Design-minded front-end software engineer focused on building beautiful interfaces and experiences",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bchiang7/bchiang7.github.io"
   },
-  "dependencies": {
-    "axios": "^0.19.2",
-    "bootstrap": "^4.5.2",
-    "gh-pages": "^2.2.0",
-    "jquery": "^3.5.1",
-    "node-sass": "^4.14.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.14.0",
-    "react-bootstrap": "^1.4.0",
-    "react-dom": "^16.14.0",
-    "react-loading-skeleton": "^2.1.1",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.4",
-    "react-typist": "^2.0.5",
-    "typescript": "^3.9.7"
-  },
+  "homepage": "https://github.com/bchiang7/bchiang7.github.io",
+  "main": "gulpfile.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "custom-deploy": "node pages.js"
+    "start": "gulp serve --watch",
+    "build": "gulp build"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "Brittany Chiang",
+  "license": "ISC",
+  "devDependencies": {
+    "@nuscout/eslint-config": "^0.2.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-imagemin": "6.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "3.0.2"
   }
 }
